@@ -8,8 +8,23 @@ authors = [
     {name = "v1nizin", email = "viniwick@outlook.com"},
 ]
 dependencies = [
-    "django>=4.2",
+    "django>=4.2.4",
     "djangorestframework>=3.14.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+
