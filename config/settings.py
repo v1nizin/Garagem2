@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "Garagem2",
     "usuario",
+    "django_extensions",
     "drf_spectacular",
     "uploader",
     "rest_framework",
@@ -137,7 +138,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 FILE_UPLOAD_PERMISSIONS = 0o640
 
 REST_FRAMEWORK = {
-    
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 SPECTACULAR_SETTINGS = {
