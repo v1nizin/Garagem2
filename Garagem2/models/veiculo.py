@@ -1,13 +1,13 @@
 from django.db import models
 from Garagem2.models import Cor, Acessorio, Modelo
-# from uploader.models import Image
+from uploader.models import Image
 
 
 class Veiculo(models.Model):
-    # capa = models.ManyToManyField(
-    #     Image,
-    #     related_name="+",
-    # )
+    capa = models.ManyToManyField(
+        Image,
+        related_name="+",
+    )
     modelo = models.ForeignKey(Modelo, on_delete=models.PROTECT, related_name="veiculos")
     cor = models.ForeignKey(Cor, on_delete=models.PROTECT, related_name="veiculos")
     ano = models.IntegerField(null=True, default=0)
